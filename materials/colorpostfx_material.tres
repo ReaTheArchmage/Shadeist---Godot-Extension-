@@ -1,0 +1,67 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://ceohdv3daqt7d"]
+
+[ext_resource type="Shader" uid="uid://cavmhrupfdkxx" path="res://addons/shadeist_plugin/colorpostfx.gdshader" id="1_ugajn"]
+
+[resource]
+shader = ExtResource("1_ugajn")
+shader_parameter/global_opacity = 1.0
+shader_parameter/global_blend = 0
+shader_parameter/exposure_on = false
+shader_parameter/exposure_opacity = 1.0
+shader_parameter/exposure_blend = 0
+shader_parameter/exposure_ev = 0.0
+shader_parameter/exposure_gamma = 1.0
+shader_parameter/exposure_contrast = 0.0
+shader_parameter/wb_on = false
+shader_parameter/wb_opacity = 1.0
+shader_parameter/wb_blend = 0
+shader_parameter/wb_temperature = 0.0
+shader_parameter/wb_tint = 0.0
+shader_parameter/wheels_on = false
+shader_parameter/wheels_opacity = 1.0
+shader_parameter/wheels_blend = 0
+shader_parameter/wheels_lift = Color(0.5, 0.5, 0.5, 1)
+shader_parameter/wheels_gamma = Color(0.5, 0.5, 0.5, 1)
+shader_parameter/wheels_gain = Color(0.5, 0.5, 0.5, 1)
+shader_parameter/hsl_on = false
+shader_parameter/hsl_opacity = 1.0
+shader_parameter/hsl_blend = 0
+shader_parameter/hsl_hue = 0.0
+shader_parameter/hsl_saturation = 1.0
+shader_parameter/hsl_lightness = 0.0
+shader_parameter/hsl_vibrance = 0.0
+shader_parameter/curves_on = false
+shader_parameter/curves_opacity = 1.0
+shader_parameter/curves_blend = 0
+shader_parameter/curves_master_shadows = 0.0
+shader_parameter/curves_master_midtones = 0.5
+shader_parameter/curves_master_highlights = 1.0
+shader_parameter/curves_r_shadows = 0.0
+shader_parameter/curves_r_midtones = 0.5
+shader_parameter/curves_r_highlights = 1.0
+shader_parameter/curves_g_shadows = 0.0
+shader_parameter/curves_g_midtones = 0.5
+shader_parameter/curves_g_highlights = 1.0
+shader_parameter/curves_b_shadows = 0.0
+shader_parameter/curves_b_midtones = 0.5
+shader_parameter/curves_b_highlights = 1.0
+shader_parameter/mixer_on = false
+shader_parameter/mixer_opacity = 1.0
+shader_parameter/mixer_blend = 0
+shader_parameter/mixer_rr = 1.0
+shader_parameter/mixer_rg = 0.0
+shader_parameter/mixer_rb = 0.0
+shader_parameter/mixer_gr = 0.0
+shader_parameter/mixer_gg = 1.0
+shader_parameter/mixer_gb = 0.0
+shader_parameter/mixer_br = 0.0
+shader_parameter/mixer_bg = 0.0
+shader_parameter/mixer_bb = 1.0
+shader_parameter/debug_corners = false
+shader_parameter/debug_corner_color = Color(1, 0.2, 0, 1)
+shader_parameter/debug_arm_length = 0.06
+shader_parameter/debug_thickness = 0.005
+shader_parameter/debug_pivot = false
+shader_parameter/debug_pivot_color = Color(0, 1, 0.5, 1)
+shader_parameter/debug_pivot_size = 0.03
+shader_parameter/debug_pivot_thickness = 0.003

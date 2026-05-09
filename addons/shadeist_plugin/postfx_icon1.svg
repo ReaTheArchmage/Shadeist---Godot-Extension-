@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg2673"
+   sodipodi:docname="post_processing_effects_icon_rainbow.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2677" />
+  <sodipodi:namedview
+     id="namedview2675"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="27.21875"
+     inkscape:cx="7.9173364"
+     inkscape:cy="9.6257176"
+     inkscape:window-width="1878"
+     inkscape:window-height="1047"
+     inkscape:window-x="42"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2673" />
+  <!-- Base panel -->
+  <path
+     fill="#e0e0e0"
+     d="M 3,1 A 2,2 0 0 0 1,3 v 10 a 2,2 0 0 0 2,2 h 10 a 2,2 0 0 0 2,-2 V 7 h -1 v 6 a 1,1 0 0 1 -1,1 H 3 A 1,1 0 0 1 2,13 V 3 A 1,1 0 0 1 3,2 H 9 V 1 Z"
+     id="path2661"
+     style="display:inline" />
+  <!-- Geometric rainbow stars -->
+  <path
+     fill="#ff4d4d"
+     d="m 12.684271,0.8794489 1,1 -1,1 -1,-1 z"
+     id="path2663"
+     style="display:inline" />
+  <path
+     fill="#ff9f40"
+     d="M 11.780711,4.9655569 13.230769,6.4156143 11.780711,7.8656717 10.330654,6.4156143 Z"
+     id="path2665"
+     style="display:inline;stroke-width:1.45006" />
+  <path
+     fill="#ffe14d"
+     d="m 5,6.5797933 1,1 -1,1 -1,-1 z"
+     id="path2667"
+     style="display:inline" />
+  <path
+     fill="#4dff88"
+     d="M 8.5186955,2.9700825 9.9228292,4.3925854 8.5186955,5.8150883 7.1145624,4.3925854 Z"
+     id="path2669"
+     style="display:inline;stroke-width:1.41329" />
+  <path
+     fill="#4da6ff"
+     d="M 9.1369218,7.7876007 11.65677,10.411967 9.1369218,13.036332 6.6170734,10.411967 Z"
+     id="path2671"
+     style="display:inline;stroke-width:2.57157" />
+</svg>

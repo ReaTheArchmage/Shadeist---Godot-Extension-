@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg">
+  <defs id="defs1">
+    <linearGradient
+       id="rainbow"
+       x1="4" y1="2.5"
+       x2="12" y2="13.5"
+       gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#ff4d4d"/>
+      <stop offset="20%"  stop-color="#ff9f40"/>
+      <stop offset="40%"  stop-color="#ffe14d"/>
+      <stop offset="60%"  stop-color="#4dff88"/>
+      <stop offset="80%"  stop-color="#4da6ff"/>
+      <stop offset="100%" stop-color="#c44dff"/>
+    </linearGradient>
+    <linearGradient
+       id="rainbow-fold"
+       x1="10" y1="2.5"
+       x2="12" y2="4.5"
+       gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#ff9f40"/>
+      <stop offset="100%" stop-color="#ffe14d"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base panel -->
+  <path
+     fill="#e0e0e0"
+     d="M 3,1 A 2,2 0 0 0 1,3 v 10 a 2,2 0 0 0 2,2 h 10 a 2,2 0 0 0 2,-2 V 7 h -1 v 6 a 1,1 0 0 1 -1,1 H 3 A 1,1 0 0 1 2,13 V 3 A 1,1 0 0 1 3,2 H 9 V 1 Z"
+     id="panel"/>
+
+  <!-- File icon body with rainbow gradient -->
+  <path
+     fill="url(#rainbow)"
+     d="M 4,2.5 L 10,2.5 L 12,4.5 L 12,13.5 L 4,13.5 Z"
+     id="file-body"/>
+
+  <!-- Fold flap — slightly desaturated rainbow slice -->
+  <path
+     fill="url(#rainbow-fold)"
+     d="M 10,2.5 L 12,4.5 L 10,4.5 Z"
+     id="file-fold"/>
+
+  <!-- Fold crease shadow for depth -->
+  <path
+     fill="none"
+     stroke="rgba(0,0,0,0.18)"
+     stroke-width="0.4"
+     d="M 10,2.5 L 10,4.5 L 12,4.5"
+     id="fold-crease"/>
+
+  <!-- Subtle shine lines on the file body -->
+  <line x1="5.5" y1="6.5"  x2="10.5" y2="6.5"  stroke="rgba(255,255,255,0.35)" stroke-width="0.6"/>
+  <line x1="5.5" y1="8"    x2="10.5" y2="8"     stroke="rgba(255,255,255,0.25)" stroke-width="0.6"/>
+  <line x1="5.5" y1="9.5"  x2="10.5" y2="9.5"   stroke="rgba(255,255,255,0.25)" stroke-width="0.6"/>
+  <line x1="5.5" y1="11"   x2="10.5" y2="11"    stroke="rgba(255,255,255,0.20)" stroke-width="0.6"/>
+
+</svg>

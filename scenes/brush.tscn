@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dndknmc68qtt8"]
+
+[ext_resource type="Script" uid="uid://82dtyqmoc6rp" path="res://scripts/brush.gd" id="1_taygo"]
+[ext_resource type="Texture2D" uid="uid://batb3vlstoiyp" path="res://pictures/default_brush.png" id="2_mqrhx"]
+
+[node name="brush" type="Node" unique_id=1521688709]
+script = ExtResource("1_taygo")
+brush_texture = ExtResource("2_mqrhx")
+stamp_interval = 0.01
+
+[node name="bg" type="ColorRect" parent="." unique_id=805320363]
+offset_right = 673.0
+offset_bottom = 648.0
+color = Color(1, 1, 1, 0)
+
+[node name="strokes_container" type="Node" parent="." unique_id=41617911]
+
+[node name="brush_buttons" type="BoxContainer" parent="." unique_id=1363983409]
+offset_left = 11.0
+offset_top = 49.0
+offset_right = 220.0
+offset_bottom = 80.0
+pivot_offset = Vector2(107, 16)
+
+[node name="undo_stroke" type="Button" parent="brush_buttons" unique_id=1341068232]
+layout_mode = 2
+text = "undo_stroke"
+
+[node name="redo_stroke" type="Button" parent="brush_buttons" unique_id=1551900749]
+layout_mode = 2
+text = "redo_stroke"

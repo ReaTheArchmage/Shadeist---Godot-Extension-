@@ -1,0 +1,126 @@
+[gd_scene format=3 uid="uid://di73hevvxuiws"]
+
+[ext_resource type="Script" uid="uid://bwbwcux0q0nsg" path="res://scripts/CameraSwitcher.gd" id="1_0u7oi"]
+[ext_resource type="Script" uid="uid://c5asput23hj87" path="res://addons/shadeist_plugin/colorpostfx_node.gd" id="1_wjr3s"]
+[ext_resource type="Script" uid="uid://dnkaawksmeryh" path="res://addons/shadeist_plugin/legacypostfx_node.gd" id="2_0u7oi"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_tefeu"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_tbgi4"]
+left_to_right = 0.9
+
+[node name="demo_3D" type="Node3D" unique_id=13280632 node_paths=PackedStringArray("cameras")]
+script = ExtResource("1_0u7oi")
+cameras = [NodePath("main_camera_3D"), NodePath("main_camera_3D2")]
+
+[node name="main_camera_3D" type="Camera3D" parent="." unique_id=1469015525]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.32933158)
+current = true
+
+[node name="ColorPostFX" type="CanvasLayer" parent="main_camera_3D" unique_id=1952908464]
+script = ExtResource("1_wjr3s")
+wheels_on = true
+wheels_lift = Color(4.235506e-06, 0.5230277, 0.8124924, 1)
+wheels_gamma = Color(0.5019608, 0.5058824, 0.49411765, 1)
+hsl_hue = -43.738
+hsl_vibrance = 0.00499999999999989
+mixer_blend = 3
+mixer_rr = 0.8689999999999998
+mixer_rg = 0.1120000000000001
+mixer_rb = 0.1120000000000001
+mixer_gr = 0.07500000000000018
+mixer_br = 0.1120000000000001
+global_opacity = 0.415
+metadata/_custom_type_script = "uid://c5asput23hj87"
+
+[node name="LegacyPostFX" type="CanvasLayer" parent="main_camera_3D" unique_id=69952276]
+script = ExtResource("2_0u7oi")
+quality = 4
+pixel_opacity = 0.561
+pixel_blend = 1
+pixel_size = 6.296
+chroma_size = 0.011
+blur_on = true
+blur_opacity = 0.304
+blur_blend = 1
+blur_size = 10.0
+bloom_on = true
+bloom_opacity = 1.0
+bloom_threshold = 0.408
+bloom_size = 6.179
+scan_opacity = 0.206
+scan_blend = 3
+scan_speed = -0.18700000000000028
+scan_size = 1.0
+vignette_on = true
+vignette_opacity = 0.116
+vignette_blend = 2
+vignette_size = 1.2120000000000002
+vignette_softness = 0.617
+debug_corner_color = Color(1, 0.2, 0, 0.44705883)
+debug_pivot_color = Color(0, 1, 0.5019608, 0.2901961)
+debug_pivot_thickness = 0.001
+metadata/_custom_type_script = "uid://dnkaawksmeryh"
+
+[node name="main_camera_3D2" type="Camera3D" parent="." unique_id=2022781502]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.32933158)
+current = true
+
+[node name="ColorPostFX" type="CanvasLayer" parent="main_camera_3D2" unique_id=372126666]
+script = ExtResource("1_wjr3s")
+wheels_on = true
+wheels_lift = Color(0.9275866, 0, 0.17200091, 1)
+wheels_gamma = Color(0.5019608, 0.5058824, 0.49411765, 1)
+hsl_on = true
+hsl_hue = -43.738
+hsl_vibrance = 0.00499999999999989
+curves_on = true
+mixer_on = true
+mixer_blend = 3
+mixer_rr = 0.8689999999999998
+mixer_rg = 0.1120000000000001
+mixer_rb = 0.1120000000000001
+mixer_gr = 0.07500000000000018
+mixer_br = 0.1120000000000001
+global_opacity = 0.415
+metadata/_custom_type_script = "uid://c5asput23hj87"
+
+[node name="LegacyPostFX" type="CanvasLayer" parent="main_camera_3D2" unique_id=1569442346]
+script = ExtResource("2_0u7oi")
+quality = 4
+pixel_opacity = 0.561
+pixel_blend = 1
+pixel_size = 6.296
+chroma_size = 0.011
+blur_on = true
+blur_opacity = 0.304
+blur_blend = 1
+blur_size = 10.0
+bloom_on = true
+bloom_opacity = 1.0
+bloom_threshold = 0.408
+bloom_size = 6.179
+scan_opacity = 0.206
+scan_blend = 3
+scan_speed = -0.18700000000000028
+scan_size = 1.0
+vignette_on = true
+vignette_opacity = 0.116
+vignette_blend = 2
+vignette_size = 1.2120000000000002
+vignette_softness = 0.617
+debug_corner_color = Color(1, 0.2, 0, 0.44705883)
+debug_pivot_color = Color(0, 1, 0.5019608, 0.2901961)
+debug_pivot_thickness = 0.001
+metadata/_custom_type_script = "uid://dnkaawksmeryh"
+
+[node name="test_meshes" type="MeshInstance3D" parent="." unique_id=169302816]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20706332, 0, -1.4379134)
+mesh = SubResource("SphereMesh_tefeu")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="test_meshes" unique_id=296770358]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6609727, 0, -1.2608967)
+mesh = SubResource("PrismMesh_tbgi4")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="test_meshes" unique_id=1136001251]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20706332, 0, 1.4379134)

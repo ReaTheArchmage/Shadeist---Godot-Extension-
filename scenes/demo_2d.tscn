@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://g8kkvrxgemb8"]
+
+[ext_resource type="Script" uid="uid://bwbwcux0q0nsg" path="res://scripts/CameraSwitcher.gd" id="1_7rlp0"]
+[ext_resource type="Script" uid="uid://c5asput23hj87" path="res://addons/shadeist_plugin/colorpostfx_node.gd" id="1_yerqs"]
+[ext_resource type="Script" uid="uid://dnkaawksmeryh" path="res://addons/shadeist_plugin/legacypostfx_node.gd" id="2_ulrfl"]
+
+[node name="demo_2D" type="Node2D" unique_id=395772563 node_paths=PackedStringArray("cameras")]
+script = ExtResource("1_7rlp0")
+cameras = [NodePath("main_camera_2D"), NodePath("main_camera_2D2")]
+
+[node name="main_camera_2D" type="Camera2D" parent="." unique_id=2080475]
+zoom = Vector2(0.335, 0.335)
+limit_enabled = false
+
+[node name="ColorPostFX" type="CanvasLayer" parent="main_camera_2D" unique_id=1661799887]
+script = ExtResource("1_yerqs")
+wheels_on = true
+wheels_lift = Color(0.8998297, 1.732707e-06, 0.50609845, 1)
+metadata/_custom_type_script = "uid://c5asput23hj87"
+
+[node name="LegacyPostFX" type="CanvasLayer" parent="main_camera_2D" unique_id=870514207]
+script = ExtResource("2_ulrfl")
+blur_size = 9.511
+metadata/_custom_type_script = "uid://dnkaawksmeryh"
+
+[node name="main_camera_2D2" type="Camera2D" parent="." unique_id=152232555]
+zoom = Vector2(0.335, 0.335)
+limit_enabled = false
+
+[node name="ColorPostFX" type="CanvasLayer" parent="main_camera_2D2" unique_id=330538474]
+visible = false
+script = ExtResource("1_yerqs")
+wheels_on = true
+wheels_lift = Color(0, 0.524618, 0.8351498, 1)
+metadata/_custom_type_script = "uid://c5asput23hj87"
+
+[node name="LegacyPostFX" type="CanvasLayer" parent="main_camera_2D2" unique_id=1376774066]
+visible = false
+script = ExtResource("2_ulrfl")
+blur_size = 9.511
+metadata/_custom_type_script = "uid://dnkaawksmeryh"
